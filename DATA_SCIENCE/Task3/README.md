@@ -2,7 +2,7 @@
 
 > **CodSoft Data Science Internship | June Batch C5 ID:BY26RY204383**  
 > **Author : Yashwanth G S**  
-> **GitHub : https://github.com/Yashwanth18102004**
+> **GitHub : https://github.com/Yashwanth181024**
 
 ---
 
@@ -94,5 +94,5 @@ pandas | numpy | matplotlib | seaborn | scikit-learn | joblib
 ## 👤 Author
 
 **Yashwanth G S**  
-GitHub : https://github.com/Yashwanth18102004
+GitHub : https://github.com/Yashwanth181024
 Internship : CodSoft DS Internship | June Batch C5 ID:BY26RY204383
