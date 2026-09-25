@@ -1,0 +1,297 @@
+/* Custom Variable Token Framework */
+:root {
+    --bg-dark: #0b0f19;
+    --bg-surface: #131a26;
+    --accent-glow: #0ea5e9;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Master Reset Configuration */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Alignment styling via Flexbox */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 8%;
+    background-color: rgba(11, 15, 25, 0.85);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    backdrop-filter: blur(12px);
+}
+
+.brand-logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.brand-logo span {
+    color: var(--accent-glow);
+}
+
+.menu-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+    color: var(--accent-glow);
+}
+
+.header-cta {
+    text-decoration: none;
+    background-color: var(--text-main);
+    color: var(--bg-dark);
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease;
+}
+
+.header-cta:hover {
+    transform: scale(1.03);
+}
+
+/* Split Columns Layout for Hero Section */
+.hero-split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 8%;
+    min-height: 85vh;
+    gap: 4rem;
+}
+
+.hero-text-col {
+    flex: 1;
+    max-width: 600px;
+}
+
+.badge {
+    background-color: rgba(14, 165, 233, 0.15);
+    color: var(--accent-glow);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text-col h1 {
+    font-size: 3.5rem;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero-text-col h1 span {
+    color: var(--accent-glow);
+}
+
+.hero-text-col p {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    margin-bottom: 2.5rem;
+}
+
+.action-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.action-btn {
+    text-decoration: none;
+    padding: 0.85rem 1.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.primary-action {
+    background-color: var(--accent-glow);
+    color: #fff;
+}
+
+.primary-action:hover {
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
+}
+
+.secondary-action {
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+}
+
+.secondary-action:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Visual Column Decorative Boxes */
+.hero-visual-col {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.visual-box-decoration {
+    width: 380px;
+    height: 380px;
+    background: linear-gradient(45deg, var(--bg-surface), #1e293b);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    position: relative;
+}
+
+.floating-card {
+    position: absolute;
+    background: rgba(19, 26, 38, 0.85);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    backdrop-filter: blur(8px);
+}
+
+.metric-1 { top: 25%; left: -15%; border-left: 4px solid var(--accent-glow); }
+.metric-2 { bottom: 20%; right: -10%; border-left: 4px solid #10b981; }
+
+/* Grid Arrangement for Services Section */
+.services-section {
+    padding: 6rem 8%;
+    background-color: var(--bg-surface);
+    border-top: 1px solid var(--border-color);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.section-header p {
+    color: var(--text-muted);
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.grid-card {
+    background-color: var(--bg-dark);
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.grid-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-glow);
+}
+
+.card-num {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--accent-glow);
+    margin-bottom: 1rem;
+}
+
+.grid-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.grid-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Footer Element Customization */
+.compact-footer {
+    padding: 2.5rem 8%;
+    background-color: var(--bg-dark);
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Responsive Structural Breakpoints to avoid element overlap */
+@media (max-width: 992px) {
+    .hero-split {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+    .action-row {
+        justify-content: center;
+    }
+    .hero-visual-col {
+        margin-top: 3rem;
+        display: none; /* Safely drops technical asset panel to avoid viewport congestion */
+    }
+}
+
+@media (max-width: 600px) {
+    .main-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .menu-links {
+        gap: 1.5rem;
+    }
+    .hero-text-col h1 {
+        font-size: 2.4rem;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
