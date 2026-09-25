@@ -2,7 +2,7 @@
 
 > **CodSoft Machine Learning Internship | September Batch C21 ID:BY26RY234729**
 > **Author : Yashwanth G S**
-> **GitHub : https://github.com/Yashwanth18102004**
+> **GitHub : https://github.com/Yashwanth181024**
 
 ---
 
@@ -94,5 +94,5 @@ pandas | scikit-learn | matplotlib | seaborn | joblib
 ## 👤 Author
 
 **Yashwanth G S**
-GitHub : https://github.com/Yashwanth18102004
+GitHub : https://github.com/Yashwanth181024
 Internship : CodSoft ML Internship | September Batch C21 ID:BY26RY234729
